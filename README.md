@@ -14,7 +14,7 @@ This is a simple Python implementation of Conway's Game of Life written in less 
    ```bash
    python3 game_of_life.py
 
-5.  **Exit the program manually** when desired by pressing 
+5.  **Exit the program manually** when desired by pressing (The program should manually exit after the simulation is finish though)
     ```bash 
     Ctrl + C
 
