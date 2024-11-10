@@ -7,6 +7,7 @@ import os
 #init vars
 databoard = []
 booldata = []
+temprepeatstorage = ["a","b","c"] # tempholders
 
 #init boards
 for i in range(52):
@@ -14,7 +15,7 @@ for i in range(52):
     boolline = []
     for j in range(52):
         if 1 <= i <= 50 and 1 <= j <= 50:
-            x = random.randint(0,3) # increase or decrease second parameter for decreased or increased life initialization
+            x = random.randint(0, 2) # increase or decrease second parameter for decreased or increased life initialization
             if x == 1:
                 emptyline.append("#")
             else:
@@ -71,6 +72,9 @@ def printboard1():
         
     print(clumpedstring,end='')
     print("\n")
+    temprepeatstorage[0] = temprepeatstorage[1]
+    temprepeatstorage[1] = temprepeatstorage[2]
+    temprepeatstorage[2] = clumpedstring
 
 #printboard (prototype 2)
 def printboard2():
@@ -115,6 +119,9 @@ printboard1()
 
 while True:
     time.sleep(0.1) # comment out for instant end result fr fr
+    #0.01 optimal speed for finishing + working, 0.1 best for seeing whats happening
     scan()
     update()
     printboard1()
+    if temprepeatstorage[0] == temprepeatstorage[2]:
+        break
