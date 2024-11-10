@@ -14,7 +14,7 @@ for i in range(52):
     boolline = []
     for j in range(52):
         if 1 <= i <= 50 and 1 <= j <= 50:
-            x = random.randint(0,3)
+            x = random.randint(0,3) # increase or decrease second parameter for decreased or increased life initialization
             if x == 1:
                 emptyline.append("#")
             else:
