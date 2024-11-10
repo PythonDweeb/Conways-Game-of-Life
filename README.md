@@ -16,6 +16,6 @@ This is a simple Python implementation of Conway's Game of Life written in less 
 
 5.  **Exit the program manually** when desired by pressing 
     ```bash 
-    Ctrl + C:
+    Ctrl + C
 
-Try adjusting randint parameter for more/less initial cell life, and time paramteres for quicker/slower generations
+Try adjusting randint parameter for more/less initial cell life, and time parameters for quicker/slower generations. This also prints out new databoards each generation, so the frame changing might look a little off.
