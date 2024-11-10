@@ -14,6 +14,8 @@ This is a simple Python implementation of Conway's Game of Life written in less 
    ```bash
    python3 game_of_life.py
 
-5.  **Exit the program manually** when desired by pressing ```bash Ctrl + C:
+5.  **Exit the program manually** when desired by pressing 
+    ```bash 
+    Ctrl + C:
 
 Try adjusting randint parameter for more/less initial cell life, and time paramteres for quicker/slower generations
